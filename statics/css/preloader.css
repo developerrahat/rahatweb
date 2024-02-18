@@ -1,0 +1,262 @@
+ :root{
+    --primary-color: #03001C;
+    --bg-white-100:#f9fcfe;
+      --hover-color:#008170;
+      --h-font-600:"BarlowCondensed-Bold"; 
+}
+body.dark{
+    --primary-color:#f9fcfe;
+    --bg-white-100:#060930;
+}
+ /* ============== Preloader Css Start ============= */
+.container-preloader {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.container-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+.container-preloader .loader-section {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: calc(50% + 1px);
+  background: var(--bg-white-100);
+}
+.container-preloader .loader-section.section-left {
+  left: 0;
+  /* background-color: var(--primary-color); */
+
+}
+.container-preloader .loader-section.section-right {
+  right: 0;
+  /* background-color:var(--hover-color); */
+}
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+/*============== Curtain effect=============== */
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.loader {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      --f-w: 4vmin;
+      --f-g: 0.5vmin;
+      --x-1: calc(-2.5 * (var(--f-w) + var(--f-g)));
+      --x-2: calc(-1.5 * (var(--f-w) + var(--f-g)));
+      --x-3: calc(-0.5 * (var(--f-w) + var(--f-g)));
+      --x-4: calc(0.5 * (var(--f-w) + var(--f-g)));
+      --x-5: calc(1.5 * (var(--f-w) + var(--f-g)));
+      --x-6: calc(2.5 * (var(--f-w) + var(--f-g)));
+      --y-1: calc(1 * (var(--f-w) + var(--f-g)));
+      --y-2: calc(2 * (var(--f-w) + var(--f-g)));
+      --y-3: calc(3 * (var(--f-w) + var(--f-g)));
+      --c-1-1: #ffcdd2;
+      --c-1-2: #ef9a9a;
+      --c-1-3: #ff6161;
+      --c-2-1: #a779fb;
+      --c-2-2: #b39ddb;
+      --c-2-3: #9575cd;
+      --c-3-1: #64ccfc;
+      --c-3-2: #81d4fa;
+      --c-3-3: #3dc2ff;
+      --c-4-1: #c8e6c9;
+      --c-4-2: #a5d6a7;
+      --c-4-3: #4bc451;
+      --c-5-1: #fff9c4;
+      --c-5-2: #fff59d;
+      --c-5-3: #ffed47;
+      --c-6-1: #ffccbc;
+      --c-6-2: #ffab91;
+      --c-6-3: #ff8a65;
+      box-sizing: border-box;
+      font-size:18px;
+  }
+  .loader:before {
+      content: "Website is Loading...";
+      color:var(--primary-color);
+      font-family: var(--h-font-500);
+      display: block;
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      z-index: 999;
+  }
+  .loader:after {
+      display: block;
+      content: " ";
+      width: var(--f-w);
+      height: var(--f-w);
+      box-shadow: var(--x-1) var(--y-3) var(--c-1-3),
+          var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-2) var(--c-2-2),
+          var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+          var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-2) var(--c-6-2),
+          var(--x-6) var(--y-1) var(--c-6-1);
+      animation: 6s infinite loader;
+      position: absolute;
+      z-index: 999;
+  }
+  
+  @keyframes loader {
+      0% {
+          box-shadow: var(--x-1) var(--y-3) var(--c-1-3),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-6) var(--y-1) var(--c-6-1);
+      }
+      5% {
+          box-shadow: var(--x-2) var(--y-3) var(--c-2-3),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-1) var(--c-5-1);
+      }
+      10% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-1) var(--c-2-1),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-3) var(--c-5-3), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      15% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-3) var(--y-1) var(--c-3-1),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-4) var(--y-3) var(--c-4-3), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      20% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-3) var(--y-3) var(--c-3-3), var(--x-4) var(--y-1) var(--c-4-1),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      25% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-4) var(--y-3) var(--c-4-3), var(--x-3) var(--y-1) var(--c-3-1),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      30% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-3) var(--y-3) var(--c-3-3),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-4) var(--y-1) var(--c-4-1), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      35% {
+          box-shadow: var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-3) var(--c-2-3),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-1) var(--c-5-1), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-2) var(--c-5-2);
+      }
+      40% {
+          box-shadow: var(--x-2) var(--y-1) var(--c-2-1),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-5) var(--y-3) var(--c-5-3);
+      }
+      45% {
+          box-shadow: var(--x-1) var(--y-1) var(--c-1-1),
+              var(--x-1) var(--y-2) var(--c-1-2), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-2) var(--c-6-2),
+              var(--x-6) var(--y-3) var(--c-6-3);
+      }
+      50% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-1) var(--y-3) var(--c-1-3), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-1) var(--c-6-1),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      55% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-3) var(--c-2-3), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-5) var(--y-1) var(--c-5-1),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      60% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-2) var(--y-1) var(--c-2-1),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-5) var(--y-3) var(--c-5-3), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      65% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-3) var(--y-1) var(--c-3-1),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-4) var(--y-3) var(--c-4-3), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      70% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-4) var(--y-1) var(--c-4-1), var(--x-3) var(--y-3) var(--c-3-3),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      75% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-3) var(--y-2) var(--c-3-2),
+              var(--x-3) var(--y-1) var(--c-3-1), var(--x-4) var(--y-3) var(--c-4-3),
+              var(--x-4) var(--y-2) var(--c-4-2), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      80% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-3) var(--y-3) var(--c-3-3),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-4) var(--y-1) var(--c-4-1), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      85% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-2) var(--c-2-2), var(--x-2) var(--y-3) var(--c-2-3),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-1) var(--c-5-1), var(--x-5) var(--y-2) var(--c-5-2),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      90% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-2) var(--y-1) var(--c-2-1), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-5) var(--y-3) var(--c-5-3),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+      95% {
+          box-shadow: var(--x-1) var(--y-2) var(--c-1-2),
+              var(--x-1) var(--y-1) var(--c-1-1), var(--x-2) var(--y-2) var(--c-2-2),
+              var(--x-3) var(--y-2) var(--c-3-2), var(--x-4) var(--y-2) var(--c-4-2),
+              var(--x-5) var(--y-2) var(--c-5-2), var(--x-6) var(--y-3) var(--c-6-3),
+              var(--x-6) var(--y-2) var(--c-6-2);
+      }
+  }
+
+  /* ================= Preloader Css Start ================ */

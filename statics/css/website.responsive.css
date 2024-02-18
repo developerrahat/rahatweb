@@ -1,0 +1,687 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .my-header {
+        padding: 5px 0;
+    }
+
+    .nav-close-btn {
+        top: 1.2em;
+        right: 1em;
+    }
+
+    /* ----------- Banner Media Css Start ---------- */
+    .banner-section {
+        padding: 50px 0;
+        margin-top: 65px;
+    }
+
+    .banner_heading h1 {
+        font-size: 42px;
+    }
+
+    .banner_heading h1 .better_technology {
+        font-size: 46px;
+    }
+
+    section.main-container {
+        margin-top: 50px;
+    }
+
+    .main {
+        width: 250px;
+        height: 250px;
+    }
+
+    .icon-block {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* ----------- Banner Media Css End ---------- */
+    /* ----------- About Media Css Start ------------ */
+    .about_right_content {
+        margin-top: 50px;
+    }
+
+    .about_right_content h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .about_right_content h1 span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about_right_content p {
+        text-align: justify;
+    }
+
+    .single_counter {
+        height: auto;
+    }
+
+    /* ----------- About Media Css End ------------ */
+
+    /* ----------- Portfolio Media Css Start ----------- */
+    #portfolio .my-portfolio-nav ul li {
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+
+    .imageRoll i {
+        width: 4.8px;
+    }
+
+    /* ----------- Portfolio Media Css Start ----------- */
+    /* ----------- Testimonial Media Css Start ----------- */
+    .tm_nav_arrow_btn {
+        bottom: 7%;
+        right: 0;
+        transform: rotate(0deg);
+    }
+
+    #testimonial_image {
+        width: 180px;
+        height: 230px;
+        margin-top: -262px;
+        margin-left: -90px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    /* ----------- Testimonial Media Css End ----------- */
+    .my_services,
+    .my-portfolio {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .my_client_reviews {
+        padding-top: 0;
+        padding-bottom: 70px;
+        overflow-x: hidden;
+    }
+
+    .seven h1 {
+        font-size: 24px;
+    }
+
+    .seven span {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .toggle-theme {
+        left: 0px;
+    }
+
+    #fixed-social {
+        right: 0;
+    }
+
+    .progress-wrap {
+        right: 5px;
+        bottom: 16px;
+    }
+
+    .social_icons li {
+        width: 34px;
+        height: 25px;
+        margin: 15px;
+    }
+
+    /* ------------ My Resume Page Media Css Start ------------ */
+    .my_resume_content_wrapper h2,
+    .my_resume_content_wrapper h2 span {
+        font-size: 20px;
+    }
+
+    .my_resume_wrapper_main {
+        padding: 30px 15px 0 15px;
+    }
+
+    .verticalflip {
+        font-size: 26px;
+    }
+
+    .verticalflip span {
+        margin-top: 3px;
+        font-size: 26px;
+        display: block;
+        height: 40px;
+    }
+
+    .my_resume_content_wrapper h1 {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    /* ------------ My Resume Page Media Css End ------------ */
+    .features_heading {
+        margin-bottom: 25px;
+    }
+
+    .features_heading h1 {
+        font-size: 29px;
+    }
+
+    .features_heading span.line_line {
+        width: 15px;
+    }
+
+    .features_heading span.better_technology {
+        font-size: 29px;
+    }
+
+    .features_item_wrapper {
+        margin: 0;
+        display: inherit !important;
+        padding: 1rem 10px 50px 10px;
+    }
+
+    .feature_contents h1 {
+        font-size: 20px;
+    }
+
+    .feature_icon {
+        margin-bottom: 20px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+
+    .portfolio_breadrcumb {
+        padding-top: 25px;
+    }
+
+    .contact-box .title-box .icon-box::after {
+        display: none;
+    }
+
+    .a-seven,
+    .a-nine,
+    .a-eight {
+        display: none;
+    }
+
+    .a-six {
+        right: 80px;
+    }
+
+    .tagline_images::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tagline_images {
+        overflow: hidden;
+    }
+
+    .my_tagline_wrapper h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .my_tagline_wrapper h1 span {
+        font-size: 36px;
+    }
+
+    .page_heading_wrapper h1 {
+        font-size: 36px;
+    }
+
+    .page_heading_wrapper h1 span {
+        font-size: 36px;
+    }
+
+    .contact-form {
+        padding: 25px 15px;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .our_location iframe {
+        border-radius: 0 0 5px 5px !important;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-close-btn {
+        top: 1.5em;
+        right: 1.5em;
+    }
+
+    /* ----------- Banner Media Css Start ---------- */
+    .banner_heading h1 {
+        font-size: 54px;
+    }
+
+    .banner_heading h1 .better_technology {
+        font-size: 56px;
+    }
+
+    .main {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* ----------- Banner Media Css End ---------- */
+    .imageRoll i {
+        width: 7.7px;
+    }
+
+    #portfolio .my-portfolio-nav ul li {
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+
+    /* ----------- Testimonial Media Css Start ----------- */
+    .tm_nav_arrow_btn {
+        bottom: 7%;
+        right: 0;
+        transform: rotate(0deg);
+    }
+
+    .my_client_reviews {
+        padding-top: 0;
+        padding-bottom: 70px;
+        overflow-x: hidden;
+    }
+
+    #testimonial_image {
+        width: 180px;
+        height: 230px;
+        margin-top: -262px;
+        margin-left: -90px;
+        object-fit: cover;
+    }
+
+    /* ----------- Testimonial Media Css End ----------- */
+    .seven h1 {
+        font-size: 32px;
+    }
+
+    .seven span {
+        width: 100%;
+    }
+
+    .toggle-theme {
+        left: 0px;
+    }
+
+    #fixed-social {
+        right: 0;
+    }
+
+    .progress-wrap {
+        right: 5px;
+        bottom: 16px;
+    }
+
+    /* ------------ My Resume Page Media Css Start ------------ */
+    .my_resume_wrapper_main {
+        padding: 30px 15px 0 15px;
+    }
+
+    .verticalflip {
+        font-size: 30px;
+    }
+
+    .verticalflip span {
+        margin-top: 3px;
+        font-size: 30px;
+    }
+
+    .my_resume_content_wrapper h1 {
+        font-size: 30px;
+    }
+
+    /* ------------ My Resume Page Media Css End ------------ */
+
+    .features_heading {
+        margin-bottom: 25px;
+    }
+
+    .features_heading h1 {
+        font-size: 36px;
+    }
+
+    .features_heading span.line_line {
+        width: 30px;
+    }
+
+    .features_heading span.better_technology {
+        font-size: 36px;
+    }
+
+    .features_item_wrapper {
+        margin: 0;
+    }
+
+    .feature_contents h1 {
+        font-size: 20px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+    .portfolio_breadrcumb {
+        padding-top: 25px;
+    }
+
+    .contact-box .title-box .icon-box::after {
+        display: none;
+    }
+
+    .a-seven {
+        display: none;
+    }
+
+    .my_tagline_wrapper h1 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .page_heading_wrapper h1 {
+        font-size: 36px;
+    }
+
+    .page_heading_wrapper h1 span {
+        font-size: 36px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-close-btn {
+        top: 1.5em;
+        right: 2em;
+    }
+
+    /* ----------- Banner Media Css Start ---------- */
+    .banner_heading h1 {
+        font-size: 60px;
+    }
+
+    .banner_heading h1 .better_technology {
+        font-size: 62px;
+    }
+
+    .main {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* ----------- Banner Media Css End ---------- */
+
+    /* ---------- Portfolio Media Css Start --------- */
+    #portfolio .my-portfolio-nav ul li {
+        margin-bottom: 10px;
+        margin-right: 5px;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+
+    .imageRoll i {
+        width: 5.5px;
+    }
+
+    /* ---------- Portfolio Media Css End --------- */
+    /* ----------- Testimonial Media Css Start ----------- */
+    .tm_nav_arrow_btn {
+        bottom: 7%;
+        right: 0;
+        transform: rotate(0deg);
+    }
+
+    .my_client_reviews {
+        padding-top: 0;
+        padding-bottom: 70px;
+        overflow-x: hidden;
+    }
+
+    /* ----------- Testimonial Media Css End ----------- */
+    .toggle-theme {
+        left: 0px;
+    }
+
+    #fixed-social {
+        right: 0;
+    }
+
+    .progress-wrap {
+        right: 5px;
+        bottom: 16px;
+    }
+
+    .portfolio_breadrcumb {
+        padding-top: 25px;
+    }
+
+    .features_item_wrapper {
+        margin: 0;
+    }
+
+    .features_heading {
+        margin-bottom: 25px;
+    }
+
+    /* ------------ My Resume Page Media Css Start ------------ */
+    .counter_up_wrapper h4 {
+        font-size: 16px;
+    }
+
+    .counter_section span {
+        font-size: 26px;
+    }
+
+    /* ------------ My Resume Page Media Css End ------------ */
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-close-btn {
+        top: 1.5em;
+        right: 2em;
+    }
+
+    /* ----------- Header Media Css Start ------------- */
+    .my_header_menu ul li a {
+        margin: 0 16px;
+        font-size: 17px;
+    }
+
+    /* ----------- Header Media Css End ------------- */
+    /* ---------- Banner Media Css Start ------------ */
+    .banner_heading h1 {
+        font-size: 48px;
+    }
+
+    .banner_heading h1 .better_technology {
+        font-size: 56px;
+    }
+
+    .main {
+        width: 400px;
+        height: 400px;
+        overflow-x: clip;
+    }
+
+    /* ---------- Banner Media Css End ------------ */
+
+    /* ---------- Services Media Css Start ----------- */
+    .card-main-title {
+        font-size: 22px;
+    }
+
+    /* ---------- Services Media Css End ----------- */
+    /* ---------- Portfolio Media Css Start ------------ */
+    .imageRoll i {
+        width: 5px;
+    }
+
+    /* ---------- Portfolio Media Css End ------------ */
+    .toggle-theme {
+        top: 50%;
+        left: 4px;
+    }
+
+    #fixed-social {
+        right: 4px;
+    }
+
+    .progress-wrap {
+        right: 5px;
+        bottom: 16px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+    .tagline_images::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .nav-close-btn {
+        top: 1.5em;
+        right: 2em;
+    }
+
+    /* ----------- Header Media Css Start ------------- */
+    .my_header_menu ul li a {
+        margin: 0 16px;
+        font-size: 17px;
+    }
+
+    /* ----------- Header Media Css End ------------- */
+    /* ---------- Banner Media Css Start ------------ */
+    .banner_heading h1 {
+        font-size: 50px;
+    }
+
+    .banner_heading h1 .better_technology {
+        font-size: 56px;
+    }
+
+    .main {
+        width: 400px;
+        height: 400px;
+        overflow-x: clip;
+    }
+
+    /* ---------- Banner Media Css End ------------ */
+
+    /* ---------- Services Media Css Start ----------- */
+    .card-main-title {
+        font-size: 22px;
+    }
+
+    /* ---------- Services Media Css End ----------- */
+
+    /* ---------- Portfolio Media Css Start ------------ */
+    .imageRoll i {
+        width: 5.8px;
+    }
+
+    /* ---------- Portfolio Media Css End ------------ */
+    .toggle-theme {
+        left: 40px;
+    }
+
+    #fixed-social {
+        right: 40px;
+    }
+
+    .progress-wrap {
+        right: 34px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+    .tagline_images::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* ---------- Contact Page Media Css Start ------------ */
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .toggle-theme {
+        left: 5px;
+    }
+
+    #fixed-social {
+        right: 5px;
+    }
+
+    .progress-wrap {
+        right: 5px;
+        bottom: 16px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1500px and up) */
+@media (min-width: 1500px) {
+    .toggle-theme {
+        left: 3.5%;
+    }
+
+    #fixed-social {
+        right: 3.5%;
+    }
+
+    .progress-wrap {
+        right: 3%;
+        bottom: 16px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1600px) {
+    .toggle-theme {
+        left: 100px;
+    }
+
+    #fixed-social {
+        right: 100px;
+    }
+
+    .progress-wrap {
+        right: 94px;
+        bottom: 16px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+@media (min-width: 1700px) {
+    .toggle-theme {
+        left: 9.4%;
+    }
+
+    #fixed-social {
+        right: 9.4%;
+    }
+
+    .progress-wrap {
+        right: 9%;
+        bottom: 16px;
+    }
+}
