@@ -76,6 +76,7 @@ body.dark {
 .website_main_content_wrapper {
   box-shadow: var(--box-shadow-2);
   position: relative;
+  scroll-behavior: smooth;
 }
 
 /* ===============Toggle theme light mood and dark mood css============= */
